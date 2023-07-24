@@ -234,3 +234,50 @@ body {
 .contacts-info {
   padding-top: 50px;
 }
+
+@media (max-width: 1210px) {
+  .tabs__content-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px 40px;
+    padding: 0 40px;
+  }
+
+
+  
+}
+
+@media (max-width: 975px) {
+  .tabs__content-item {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  .basket, .logo__img {
+    position: relative;
+    z-index: 10;
+  }
+
+  .basket {
+    padding-right: 50px;
+  }
+
+  .menu__list {
+    position: absolute;
+    z-index: 5;
+    flex-direction: column;
+    background-color: #F2F2E5;
+    color: #2C4421;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 200px;
+    height: 100vh;
+    align-items: center;
+    transform: translateY(-100%);
+  }
+
+  .menu__list.menu__list--active {
+    transform: translateY(0);
+  }
+}
